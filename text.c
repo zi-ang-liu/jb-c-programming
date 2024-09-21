@@ -1,10 +1,6 @@
-// hello word
-// 2017-12-06
-
 #include <stdio.h>
 
-int main()
-{
-    printf("hello, world\n");
+int main(void){
+    printf("Hello, World!\n");
     return 0;
 }
