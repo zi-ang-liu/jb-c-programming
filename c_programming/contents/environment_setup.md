@@ -25,10 +25,18 @@ Xcode(Wikipedia)：https://ja.wikipedia.org/wiki/Xcode
 
 ## コンパイラのインストール
 
-### Windows
-...
+### Windowsコンピュータの場合
 
-### Mac
+<!-- Windowsコンピュータについては，`MinGW` コンパイラを使用します．
+
+以下の手順でMinGWをインストールしてください．
+
+1. [MinGW-64のウェブサイト](https://www.mingw-w64.org​)を開きます．
+2. 左側のメニューから**Downloads**を選択します．
+3. 左側のメニューから**MinGW-W64-builds**を選択します．
+4.  -->
+
+### Macコンピュータの場合
 
 Macのコンピュータについては，`Clang/LLVM` コンパイラを使用します．
 
