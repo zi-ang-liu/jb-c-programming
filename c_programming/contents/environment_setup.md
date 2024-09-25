@@ -11,7 +11,7 @@
 
 以下の⼿順に従って，各⾃で開発環境を構築してください．
 
-### 準備知識
+## 準備知識
 
 ### MinGW，Command Line Tools for Xcode とは？
 
