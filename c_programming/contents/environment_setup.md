@@ -51,6 +51,14 @@ name: mingw_folder
 Windows(C:)の下に「mingw64」というフォルダができている
 ```
 
+```{figure} ./figures/env_setup/mingw_inside.png
+---
+height: 200px
+name: mingw_folder
+---
+「mingw64」のフォルダの中身。
+```
+
 
 #### 環境変数の設定
 
@@ -58,6 +66,8 @@ Windows(C:)の下に「mingw64」というフォルダができている
 2. 「システムのプロパティ」下部の「環境変数」をクリックします．
 3. 「システム環境変数」の中から「Path」を選択し，「編集」をクリックします．
 4. 「新規」をクリックし，`C:\mingw64\bin`を追加し、「OK」をクリックします．
+
+
 
 #### 確認
 
