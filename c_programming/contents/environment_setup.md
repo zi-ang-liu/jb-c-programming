@@ -44,7 +44,7 @@ Windows(C:)の下に「**mingw64**」というフォルダができてればOK (
 
 ```{figure} ./figures/env_setup/mingw_folder.png
 ---
-height: 200px
+height: 150px
 name: mingw-folder
 ---
 Windows(C:)の下に「mingw64」というフォルダができている
