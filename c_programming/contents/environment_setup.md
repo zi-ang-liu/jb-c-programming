@@ -42,7 +42,7 @@ Windowsコンピュータについては，**MinGW**コンパイラを使用し�
 4. **x86_64-14.2.0-release-posix-seh-ucrt-rt_v12-rev0.7z** をダウンロード
 5. ダウンロードファイルを解凍する。解凍したフォルダをCドライブ直下に移動する。
 
-#### 確認
+##### 確認
 
 Windows(C:)の下に「**mingw64**」というフォルダができてればOK ({numref}`mingw_folder`)
 {numref}`directive-fig`
