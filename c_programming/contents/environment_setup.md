@@ -60,35 +60,20 @@ name: mingw-folder-inside
 「mingw64」のフォルダの中身。
 ```
 
-```{figure} ./figures/env_setup/mingw_folder.png
----
-height: 150px
-name: mingw-folder-1
----
-Windows(C:)の下に「mingw64」というフォルダができている
-```
-
-あああ{numref}`mingw-folder-1`
-
-
-```{figure} ../images/C-3PO_droid.png
----
-height: 150px
-name: directive-fig
----
-Here is my figure caption!
-```
-
-{numref}`directive-fig`
-
 #### 環境変数の設定
 
 1. Windowsの検索バーに「環境変数」と入力し，**環境変数の編集**を選択します．
 2. 「システムのプロパティ」下部の「環境変数」をクリックします．
 3. 「システム環境変数」の中から「Path」を選択し，「編集」をクリックします．
-4. 「新規」をクリックし，`C:\mingw64\bin`を追加し、「OK」をクリックします．
+4. 「新規」をクリックし，`C:\mingw64\bin`を追加し、「OK」をクリックします({numref}`add-env-var`)．
 
-
+```{figure} ./figures/env_setup/add_env_var.png
+---
+height: 150px
+name: add-env-var
+---
+環境変数の追加
+```
 
 #### 確認
 
