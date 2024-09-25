@@ -25,8 +25,8 @@ Xcode(Wikipedia)：https://ja.wikipedia.org/wiki/Xcode
 
 ## コンパイラのインストール
 
-- [Windows の場合](#MinGW-(Windows))
-- [Mac の場合](#Clang/LLVM-(Mac))
+- [Windows の場合](#mingw-windows)
+- [Mac の場合](#clangllvm-mac)
 
 ### MinGW (Windows)
 
