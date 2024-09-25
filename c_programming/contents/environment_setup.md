@@ -164,12 +164,22 @@ VS Codeを起動し，左側のアイコンから`Extensions`をクリックし�
 
 ### VS Codeの日本語化(オプション)
 
-1. VS Codeを起動します．
-2. 左側のアイコンから**Extensions**をクリックしてください．
-3. 検索ボックスにて「japanese」と打ち込む
-4. 「Japanese Language Pack for Visual Studio Code」を選択
-5. 「Install」を押す
-6. インストールが完了したら一度閉じて開き直すと日本語化が反映される
+VS Codeを起動し、以下の手順({numref}`vs-code-jp`)で日本語化をすることができます．
+
+1. 左側のアイコンから**Extensions**をクリックしてください．
+2. 検索ボックスにて「japanese」と打ち込む
+3. 「Japanese Language Pack for Visual Studio Code」を選択
+4. 「Install」を押す
+   
+インストールが完了したら一度閉じて開き直すと日本語化が反映される
+
+```{figure} ./figures/env_setup/vs_code_jp.png
+---
+height: 200px
+name: vs-code-jp
+---
+VS Codeの日本語化
+```
 
 ## はじめてのプログラム
 
