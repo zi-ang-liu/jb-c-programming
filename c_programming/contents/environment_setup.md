@@ -45,7 +45,7 @@ Windowsコンピュータについては，**MinGW**コンパイラを使用し�
 
 ```{figure} ./figures/env_setup/mingw_folder.png
 ---
-height: 150px
+height: 200px
 name: mingw_folder
 ---
 Windows(C:)の下に「mingw64」というフォルダができている
