@@ -60,6 +60,16 @@ name: mingw-folder
 「mingw64」のフォルダの中身。
 ```
 
+```{figure} ./figures/env_setup/mingw_folder.png
+---
+height: 150px
+name: mingw-folder-2
+---
+Here is my figure caption!
+```
+
+{numref}`mingw-folder-2`
+
 
 ```{figure} ../images/C-3PO_droid.png
 ---
