@@ -61,6 +61,16 @@ name: mingw-folder
 ```
 
 
+```{figure} ../images/C-3PO_droid.png
+---
+height: 150px
+name: directive-fig
+---
+Here is my figure caption!
+```
+
+{numref}`directive-fig`
+
 #### 環境変数の設定
 
 1. Windowsの検索バーに「環境変数」と入力し，**環境変数の編集**を選択します．
