@@ -50,6 +50,8 @@ name: mingw-folder
 Windows(C:)の下に「mingw64」というフォルダができている
 ```
 
+「mingw64」のフォルダの中身は{numref}`mingw-folder`のようになっています。この中の「bin」にプログラムを必要なアプリケーションが入っている。
+
 ```{figure} ./figures/env_setup/mingw_inside.png
 ---
 height: 200px
