@@ -32,8 +32,6 @@ Xcode(Wikipedia)：https://ja.wikipedia.org/wiki/Xcode
 
 Windowsコンピュータについては，**MinGW**コンパイラを使用します．
 
-#### インストール
-
 以下の手順でMinGWをインストールしてください．
 
 1. [MinGW-64のウェブサイト](https://www.mingw-w64.org​)を開きます．
@@ -41,8 +39,6 @@ Windowsコンピュータについては，**MinGW**コンパイラを使用し�
 3. [GitGub](https://github.com/niXman/mingw-builds-binaries/releases)にリンクされたページが開きます．
 4. **x86_64-14.2.0-release-posix-seh-ucrt-rt_v12-rev0.7z** をダウンロード
 5. ダウンロードファイルを解凍する。解凍したフォルダをCドライブ直下に移動する。
-
-##### 確認
 
 Windows(C:)の下に「**mingw64**」というフォルダができてればOK ({numref}`mingw-folder`)
 
