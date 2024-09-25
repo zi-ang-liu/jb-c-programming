@@ -44,33 +44,12 @@ Windowsコンピュータについては，**MinGW**コンパイラを使用し�
 
 ##### 確認
 
-Windows(C:)の下に「**mingw64**」というフォルダができてればOK ({numref}`mingw_folder`)
-{numref}`directive-fig`
-
-{numref}`mingw_folder`
-
-{numref}`mingw_folder`
-
-{numref}`directive-fig`
-
-```{figure} ../images/C-3PO_droid.png
----
-height: 150px
-name: directive-fig
----
-Here is my figure caption!
-```
-
-- {ref}`directive-fig`
-- [](markdown-fig)
-{numref}`Figure {number}: {name} <directive-fig>`
-
-{numref}`directive-fig`
+Windows(C:)の下に「**mingw64**」というフォルダができてればOK ({numref}`mingw-folder`)
 
 ```{figure} ./figures/env_setup/mingw_folder.png
 ---
 height: 200px
-name: mingw_folder
+name: mingw-folder
 ---
 Windows(C:)の下に「mingw64」というフォルダができている
 ```
@@ -78,7 +57,7 @@ Windows(C:)の下に「mingw64」というフォルダができている
 ```{figure} ./figures/env_setup/mingw_inside.png
 ---
 height: 200px
-name: mingw_folder
+name: mingw-folder
 ---
 「mingw64」のフォルダの中身。
 ```
