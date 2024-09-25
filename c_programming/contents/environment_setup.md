@@ -40,22 +40,22 @@ Windowsコンピュータについては，**MinGW**コンパイラを使用し�
 4. **x86_64-14.2.0-release-posix-seh-ucrt-rt_v12-rev0.7z** をダウンロード
 5. ダウンロードファイルを解凍する。解凍したフォルダをCドライブ直下に移動する。
 
-Windows(C:)の下に「**mingw64**」というフォルダができてればOK ({numref}`mingw-folder`)
+Windows(C:)の下に「**mingw64**」というフォルダができてればOK ({numref}`c-mingw-folder`)
 
 ```{figure} ./figures/env_setup/mingw_folder.png
 ---
 height: 150px
-name: mingw-folder
+name: c-mingw-folder
 ---
 Windows(C:)の下に「mingw64」というフォルダができている
 ```
 
-「mingw64」のフォルダの中身は{numref}`mingw-folder`のようになっています。この中の「bin」にプログラムを必要なアプリケーションが入っている。
+「mingw64」のフォルダの中身は{numref}`mingw-folder-inside`のようになっています。この中の「bin」にプログラムを必要なアプリケーションが入っている。
 
 ```{figure} ./figures/env_setup/mingw_inside.png
 ---
 height: 200px
-name: mingw-folder
+name: mingw-folder-inside
 ---
 「mingw64」のフォルダの中身。
 ```
@@ -63,12 +63,12 @@ name: mingw-folder
 ```{figure} ./figures/env_setup/mingw_folder.png
 ---
 height: 150px
-name: mingw-folder-2
+name: mingw-folder-1
 ---
-Here is my figure caption!あ
+Windows(C:)の下に「mingw64」というフォルダができている
 ```
 
-{numref}`mingw-folder-2`
+あああ{numref}`mingw-folder-1`
 
 
 ```{figure} ../images/C-3PO_droid.png
