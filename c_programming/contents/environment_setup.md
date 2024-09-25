@@ -49,6 +49,24 @@ Windows(C:)の下に「**mingw64**」というフォルダができてればOK (
 
 {numref}`mingw_folder`
 
+{numref}`mingw_folder`
+
+{numref}`directive-fig`
+
+```{figure} ../images/C-3PO_droid.png
+---
+height: 150px
+name: directive-fig
+---
+Here is my figure caption!
+```
+
+- {ref}`directive-fig`
+- [](markdown-fig)
+{numref}`Figure {number}: {name} <directive-fig>`
+
+{numref}`directive-fig`
+
 ```{figure} ./figures/env_setup/mingw_folder.png
 ---
 height: 200px
