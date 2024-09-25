@@ -65,7 +65,7 @@ name: mingw-folder
 height: 150px
 name: mingw-folder-2
 ---
-Here is my figure caption!
+Here is my figure caption!あ
 ```
 
 {numref}`mingw-folder-2`
