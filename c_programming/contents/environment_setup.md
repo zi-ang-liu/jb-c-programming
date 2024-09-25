@@ -25,12 +25,10 @@ Xcode(Wikipedia)：https://ja.wikipedia.org/wiki/Xcode
 
 ## コンパイラのインストール
 
-- [Windowsコンピュータの場合](#Windowsコンピュータの場合)
-- [Macコンピュータの場合](#Macコンピュータの場合)
+- [Windows の場合](#MinGW-(Windows))
+- [Mac の場合](#Clang/LLVM-(Mac))
 
-### Windowsコンピュータの場合
-
-#### MinGWのインストール
+### MinGW (Windows)
 
 Windowsコンピュータについては，`MinGW` コンパイラを使用します．
 
@@ -64,7 +62,7 @@ gcc --version
 もし「gcc ファイルが存在しない」という内容のメッセージが出た場合は，正しくインストールされていないか，環境変数が正しく設定されていないと考えられます．これまでの⼿順を再度確認してください．
 
 
-### Macコンピュータの場合
+### Clang/LLVM (Mac)
 
 Macのコンピュータについては，**Clang/LLVM** コンパイラを使用します．
 
@@ -110,7 +108,7 @@ VS Codeを起動し，左側のアイコンから`Extensions`をクリックし�
 ### VS Codeの日本語化
 
 1. VS Codeを起動します．
-2. 左側のアイコンから`Extensions`をクリックしてください．
+2. 左側のアイコンから**Extensions**をクリックしてください．
 3. 検索ボックスにて「japanese」と打ち込む
 4. 「Japanese Language Pack for Visual Studio Code」を選択
 5. 「Install」を押す
