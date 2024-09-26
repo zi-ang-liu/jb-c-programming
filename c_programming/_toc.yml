@@ -4,16 +4,13 @@
 format: jb-book
 root: intro
 chapters:
-
-parts:
-  - caption: Get started
-    chapters:
-    - file: contents/environment_setup
-  - caption: 
-    chapters: 講義資料
-    - file: contents/1.-basics
-    - file: contents/2.-variables-and-data-types
-    - file: contents/3.-operators
+# - file: markdown
+# - file: notebooks
+# - file: markdown-notebooks
+- file: contents/environment_setup
+- file: contents/1.-basics
+- file: contents/2.-variables-and-data-types
+- file: contents/3.-operators
 
 # * [環境構築](get-start/huan-jing-gou-zhu.md)
 # * [1. Basics](materials/1.-basics.md)
