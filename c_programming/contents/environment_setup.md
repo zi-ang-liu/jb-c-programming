@@ -54,7 +54,7 @@ Windows(C:)の下に「**mingw64**」というフォルダができてればOK (
 
 ```{figure} ./figures/env_setup/mingw_folder.png
 ---
-height: 150px
+height: 200px
 name: c-mingw-folder
 ---
 Windows(C:)の下に「mingw64」というフォルダができている
@@ -81,7 +81,7 @@ name: mingw-folder-inside
 
 ```{figure} ./figures/env_setup/add_env_var.png
 ---
-height: 150px
+height: 200px
 name: add-env-var
 ---
 環境変数の追加
@@ -107,8 +107,7 @@ gcc --version
 `gcc` と⼊⼒して次のエラーメッセージが出る場合の対処法について記載します．
 
 ```bash
-エラーメッセージ：「'gcc'は，内部コマンドまたは外部コマンド，操作可能なプログラムまたはバッチファイル
-として認識されていません．」
+'gcc'は，内部コマンドまたは外部コマンド，操作可能なプログラムまたはバッチファイルとして認識されていません．
 ```
 
 原因：もっとも考えられる原因は，環境変数 PATH の設定です．
