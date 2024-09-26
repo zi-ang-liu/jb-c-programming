@@ -4,15 +4,16 @@
 format: jb-book
 root: intro
 chapters:
-# - file: markdown
-# - file: notebooks
-# - file: markdown-notebooks
-- file: contents/calendar
-- file: contents/environment_setup
-- file: contents/1.-basics
-- file: contents/2.-variables-and-data-types
-- file: contents/3.-operators
 
+parts:
+  - caption: Get started
+    chapters:
+    - file: contents/environment_setup
+  - caption: 
+    chapters: 講義資料
+    - file: contents/1.-basics
+    - file: contents/2.-variables-and-data-types
+    - file: contents/3.-operators
 
 # * [環境構築](get-start/huan-jing-gou-zhu.md)
 # * [1. Basics](materials/1.-basics.md)
@@ -28,3 +29,7 @@ chapters:
 # * [11. Applications of pointers and structures](materials/11.-applications-of-pointers-and-structures.md)
 # * [12. Basics of standard library functions](materials/12.-basics-of-standard-library-functions.md)
 # * [13. Applications of standard library functions](materials/13.-applications-of-standard-library-functions.md)
+
+# - file: markdown
+# - file: notebooks
+# - file: markdown-notebooks
