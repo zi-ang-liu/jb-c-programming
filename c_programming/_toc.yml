@@ -11,21 +11,16 @@ chapters:
 - file: contents/1.-basics
 - file: contents/2.-variables-and-data-types
 - file: contents/3.-operators
-
-# * [環境構築](get-start/huan-jing-gou-zhu.md)
-# * [1. Basics](materials/1.-basics.md)
-# * [2. Variables and data types](materials/2.-variables-and-data-types.md)
-# * [3. Operators](materials/3.-operators.md)
-# * [4. Basics of control statements](materials/4.-basics-of-control-statements.md)
-# * [5. Control statements and algorithms](materials/5.-control-statements-and-algorithms.md)
-# * [6. Arrays and strings](materials/6.-arrays-and-strings.md)
-# * [7. Console input/output](materials/7.-console-input-output.md)
-# * [8. Basics of functions](materials/8.-basics-of-functions.md)
-# * [9. Applications of functions](materials/9.-applications-of-functions.md)
-# * [10. Basic of pointers](materials/10.-basic-of-pointers.md)
-# * [11. Applications of pointers and structures](materials/11.-applications-of-pointers-and-structures.md)
-# * [12. Basics of standard library functions](materials/12.-basics-of-standard-library-functions.md)
-# * [13. Applications of standard library functions](materials/13.-applications-of-standard-library-functions.md)
+- file: contents/4.-basics-of-control-statements
+- file: contents/5.-control-statements-and-algorithms
+- file: contents/6.-arrays-and-strings
+- file: contents/7.-console-input-output
+- file: contents/8.-basics-of-functions
+- file: contents/9.-applications-of-functions
+- file: contents/10.-basic-of-pointers
+- file: contents/11.-applications-of-pointers-and-structures
+- file: contents/12.-basics-of-standard-library-functions
+- file: contents/13.-applications-of-standard-library-functions
 
 # - file: markdown
 # - file: notebooks
