@@ -7,6 +7,8 @@ chapters:
 # - file: markdown
 # - file: notebooks
 # - file: markdown-notebooks
+- file: contents/class_readme
+- file: contents/calendar
 - file: contents/environment_setup
 - file: contents/1.-basics
 - file: contents/2.-variables-and-data-types
