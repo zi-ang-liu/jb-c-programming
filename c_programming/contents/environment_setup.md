@@ -254,10 +254,26 @@ gcc test.c -o test.exe
 
 コンパイルが成功すると，作業フォルダに**test.exe**という実行ファイルが作成されます．ターミナルで以下のコマンドを入力して，プログラムを実行してください．
 
-Windowsの場合は，以下のコマンドを入力してください．
+Windowsのpowershellの場合は，以下のコマンドを入力してください．
+
+```bash
+.\test.exe
+```
+
+Windowsのコマンドプロンプトの場合は，以下のコマンドを入力してください．
 
 ```bash
 test.exe
+```
+
+Windowsのコマンドプロンプトを選択する方法は以下の画像に示しています．
+
+```{figure} ./figures/env_setup/cmd_power.png
+---
+height: 200px
+name: vs-code-jp
+---
+コマンドプロンプトを選択する
 ```
 
 Macの場合は，以下のコマンドを入力してください．
