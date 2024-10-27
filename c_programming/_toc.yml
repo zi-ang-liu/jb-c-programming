@@ -23,6 +23,7 @@ chapters:
 - file: contents/11.-applications-of-pointers-and-structures
 - file: contents/12.-basics-of-standard-library-functions
 - file: contents/13.-applications-of-standard-library-functions
+- file: contents/powershell
 
 # - file: markdown
 # - file: notebooks
