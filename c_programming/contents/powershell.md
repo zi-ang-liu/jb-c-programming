@@ -2,6 +2,7 @@
 
 ## Getting Started
 
+
 ### バージョン
 
 PowerShell のバージョンを確認するには、次のコマンドを実行します。
@@ -29,14 +30,79 @@ $PSVersionTable
 | `New-Item`      | `ni`   | Create new item         | `ni file.txt`              |
 | `Rename-Item`   | `ren`  | Rename item             | `ren file.txt newfile.txt` |
 
+### Set-Location
+
+`Set-Location` コマンドレットは、カレントディレクトリを変更します。
+
+```powershell
+Set-Location C:\
+```
+
+使用できるエイリアスは以下の通りです。
+
+- `cd`
+- `chdir`
+- `sl`
+
+`cd ..` コマンドを使用して、親ディレクトリに移動します。
+
+```powershell
+cd ..
+```
+
+### Get-Location
+
+`Get-Location` コマンドレットは、カレントディレクトリを取得します。
+
+```powershell
+Get-Location
+```
+
+使用できるエイリアスは以下の通りです。
+
+- `pwd`
+- `gl`
+
+### Get-ChildItem
+
+`Get-ChildItem` コマンドレットは、指定されたディレクトリ内のファイルとサブディレクトリのリストを取得します。
+
+```powershell
+Get-ChildItem
+```
+
+使用できるエイリアスは以下の通りです。
+
+- `dir`
+- `ls`
+
+`-Recurse` パラメーターを使用して、サブディレクトリ内のファイルとディレクトリを再帰的に取得します。
+
+```powershell
+Get-ChildItem -Recurse
+```
+
+`-Filter` パラメーターを使用して、ファイル名のパターンを指定してファイルをフィルタリングします。
+
+```powershell
+Get-ChildItem -Filter *.txt
+```
+
+
+
+
+
+
 ## ネットワーク
 
-| Name                 | Description             | Example                                 |
-| -------------------- | ----------------------- | --------------------------------------- |
-| `Test-Connection`    | Test network connection | `Test-Connection www.example.com`       |
-| `Test-NetConnection` | Test network connection | `Test-NetConnection`                    |
-| `Resolve-DnsName`    | Resolve DNS name        | `Resolve-DnsName -name www.example.com` |
-
+| Name                     | Description             | Example                                 |
+| ------------------------ | ----------------------- | --------------------------------------- |
+| `Test-Connection`        | Test network connection | `Test-Connection www.example.com`       |
+| `Test-NetConnection`     | Test network connection | `Test-NetConnection`                    |
+| `Resolve-DnsName`        | Resolve DNS name        | `Resolve-DnsName -name www.example.com` |
+| `Get-NetIPConfiguration` | Get IP configuration    | `Get-NetIPConfiguration`                |
+| `Get-NetTCPConnection`   | Get TCP connection      | `Get-NetTCPConnection`                  |
+| `Get-NetAdapter`         | Get network adapter     | `Get-NetAdapter`                        |
 
 ### Test-Connection
 
@@ -109,6 +175,36 @@ Resolve-DnsName -name www.example.com
 Resolve-DnsName -name www.example.com -Type A
 ```
 
-### Get-NetIPAddress
+### Get-NetIPConfiguration
+
+`Get-NetIPConfiguration` コマンドレットは、ネットワークアダプターのIP設定情報を取得します。
+
+```powershell
+Get-NetIPConfiguration
+```
+
+### Get-NetTCPConnection
+
+`Get-NetTCPConnection` コマンドレットは、TCP接続の情報を取得します。
+
+```powershell
+Get-NetTCPConnection
+```
+
+`-State` パラメーターを`Established` に設定して、確立されたTCP接続の情報を取得します。
+
+```powershell
+Get-NetTCPConnection -State Established
+```
+
+### Get-NetAdapter
+
+`Get-NetAdapter` コマンドレットは、ネットワークアダプターの情報を取得します。`Get-NetAdapter` コマンドレットを使用して、ネットワークアダプターの名前、MACアドレス、LinkSpeed、状態などの情報を取得できます。
+
+```powershell
+Get-NetAdapter
+```
+
+
 
 
