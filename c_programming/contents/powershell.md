@@ -18,21 +18,21 @@ $PSVersionTable
 
 ## ファイルシステム
 
-| Name            | Alias  | Description             | Example                    |
-| --------------- | ------ | ----------------------- | -------------------------- |
-| `Set-Location`  | `cd`   | Change directory        | `cd C:\`                   |
-| `Get-Location`  | `pwd`  | Print working directory | `pwd`                      |
-| `Get-ChildItem` | `dir`  | List directory contents | `dir`                      |
-| `New-Item`      | `ni`   | Create new item         | `ni file.txt`              |
-| `Rename-Item`   | `ren`  | Rename item             | `ren file.txt newfile.txt` |
-| `Copy-Item`     | `copy` | Copy item               | `cp file.txt C:\`          |
-| `Move-Item`     | `move` | Move item               | `mv file.txt C:\`          |
-| `Get-Content`   | `gc`   | Get item content        | `gc file.txt`              |
-| `Remove-Item`   | `del`  | Remove item             | `rm file.txt`              |
+| Name            | Alias               | Description             | Example                    |
+| --------------- | ------------------- | ----------------------- | -------------------------- |
+| `Set-Location`  | `cd`, `chdir`, `sl` | Change directory        | `cd C:\`                   |
+| `Get-Location`  | `pwd`, `gl`         | Print working directory | `pwd`                      |
+| `Get-ChildItem` | `dir`, `ls`         | List directory contents | `dir`                      |
+| `New-Item`      | `ni`                | Create new item         | `ni file.txt`              |
+| `Rename-Item`   | `ren`               | Rename item             | `ren file.txt newfile.txt` |
+| `Copy-Item`     | `copy`              | Copy item               | `cp file.txt C:\`          |
+| `Move-Item`     | `move`              | Move item               | `mv file.txt C:\`          |
+| `Get-Content`   | `gc`                | Get item content        | `gc file.txt`              |
+| `Remove-Item`   | `del`               | Remove item             | `rm file.txt`              |
 
 ### Set-Location
 
-`Set-Location` コマンドレットは、カレントディレクトリを変更します。使用できるエイリアスは、`cd` 、`chdir` 、`sl` です。
+`Set-Location` コマンドレットは、カレントディレクトリを変更します。
 
 ```powershell
 Set-Location C:\
@@ -46,7 +46,7 @@ Set-Location ..
 
 ### Get-Location
 
-`Get-Location` コマンドレットは、カレントディレクトリを取得します。使用できるエイリアスは、`pwd` と`gl` です。
+`Get-Location` コマンドレットは、カレントディレクトリを取得します。
 
 ```powershell
 Get-Location
@@ -54,7 +54,7 @@ Get-Location
 
 ### Get-ChildItem
 
-`Get-ChildItem` コマンドレットは、指定されたディレクトリ内のファイルとサブディレクトリのリストを取得します。使用できるエイリアスは、`dir` と`ls` です。
+`Get-ChildItem` コマンドレットは、指定されたディレクトリ内のファイルとサブディレクトリのリストを取得します。
 
 ```powershell
 Get-ChildItem
@@ -86,12 +86,45 @@ Get-ChildItem -Filter *.txt
 
 ### New-Item
 
+`New-Item` コマンドレットは、新しいファイル、ディレクトリを作成します。
 
+以下の例は、現在のディレクトリにファイル `test.txt` を作成します。
 
+```powershell
+New-Item test.txt
+```
 
+`-ItemType` パラメーターを使用して、新しい項目の種類を指定できます。`File` はファイル、`Directory` はディレクトリを指定します。
 
+```powershell
+New-Item test -ItemType Directory
+```
 
+`-Path` パラメーターを使用して、新しい項目の場所を指定できます。`-Name` パラメーターを使用して、新しい項目の名前を指定できます。`-Value` パラメーターを使用して、新しいファイルの内容を指定できます。
 
+以下の例は、`C:\test` ディレクトリにファイル `test.txt` を作成し、内容を `Hello, World!` とします。
+
+```powershell
+New-Item -Path C:\test -Name test.txt -ItemType File -Value "Hello, World!"
+```
+
+### Rename-Item
+
+`Rename-Item` コマンドレットは、ファイルまたはディレクトリの名前を変更します。
+
+以下の例は、`test.txt` ファイルを `newtest.txt` にリネームします。
+
+```powershell
+Rename-Item -Path "C:\test\test.txt" -NewName "newtest.txt"
+```
+
+ここで、`test.txt` ファイルが存在しない場合、次のエラーメッセージが表示されます。`C:\test\test.txt` が存在しないため、リネームできません。
+
+```bash
+Rename-Item : Cannot rename because item at 'C:\test\test.txt' does not exist.
+```
+
+### Copy-Item
 
 ## ネットワーク
 
