@@ -2,7 +2,6 @@
 
 ## Getting Started
 
-
 ### バージョン
 
 PowerShell のバージョンを確認するには、次のコマンドを実行します。
@@ -24,69 +23,70 @@ $PSVersionTable
 | `Set-Location`  | `cd`   | Change directory        | `cd C:\`                   |
 | `Get-Location`  | `pwd`  | Print working directory | `pwd`                      |
 | `Get-ChildItem` | `dir`  | List directory contents | `dir`                      |
-| `Copy-Item`     | `copy` | Copy item               | `cp file.txt C:\`          |
-| `Move-Item`     | `move` | Move item               | `mv file.txt C:\`          |
-| `Remove-Item`   | `del`  | Remove item             | `rm file.txt`              |
 | `New-Item`      | `ni`   | Create new item         | `ni file.txt`              |
 | `Rename-Item`   | `ren`  | Rename item             | `ren file.txt newfile.txt` |
+| `Copy-Item`     | `copy` | Copy item               | `cp file.txt C:\`          |
+| `Move-Item`     | `move` | Move item               | `mv file.txt C:\`          |
+| `Get-Content`   | `gc`   | Get item content        | `gc file.txt`              |
+| `Remove-Item`   | `del`  | Remove item             | `rm file.txt`              |
 
 ### Set-Location
 
-`Set-Location` コマンドレットは、カレントディレクトリを変更します。
+`Set-Location` コマンドレットは、カレントディレクトリを変更します。使用できるエイリアスは、`cd` 、`chdir` 、`sl` です。
 
 ```powershell
 Set-Location C:\
 ```
 
-使用できるエイリアスは以下の通りです。
-
-- `cd`
-- `chdir`
-- `sl`
-
-`cd ..` コマンドを使用して、親ディレクトリに移動します。
+`Set-Location ..` コマンドを使用して、親ディレクトリに移動します。
 
 ```powershell
-cd ..
+Set-Location ..
 ```
 
 ### Get-Location
 
-`Get-Location` コマンドレットは、カレントディレクトリを取得します。
+`Get-Location` コマンドレットは、カレントディレクトリを取得します。使用できるエイリアスは、`pwd` と`gl` です。
 
 ```powershell
 Get-Location
 ```
 
-使用できるエイリアスは以下の通りです。
-
-- `pwd`
-- `gl`
-
 ### Get-ChildItem
 
-`Get-ChildItem` コマンドレットは、指定されたディレクトリ内のファイルとサブディレクトリのリストを取得します。
+`Get-ChildItem` コマンドレットは、指定されたディレクトリ内のファイルとサブディレクトリのリストを取得します。使用できるエイリアスは、`dir` と`ls` です。
 
 ```powershell
 Get-ChildItem
 ```
 
-使用できるエイリアスは以下の通りです。
-
-- `dir`
-- `ls`
-
-`-Recurse` パラメーターを使用して、サブディレクトリ内のファイルとディレクトリを再帰的に取得します。
+`-Path` パラメーターを使用して、指定されたディレクトリ内のファイルとサブディレクトリのリストを取得します。
 
 ```powershell
-Get-ChildItem -Recurse
+Get-ChildItem -Path C:\
 ```
 
-`-Filter` パラメーターを使用して、ファイル名のパターンを指定してファイルをフィルタリングします。
+`-Recurse` パラメーターを使用すると、全てのサブディレクトリを再帰的に取得します。`-Depth` パラメーターを使用して、再帰の深さを指定できます。ここでは、1 つのサブディレクトリまで取得します。
+
+```powershell
+Get-ChildItem -Recurse -Depth 1
+```
+
+`-Force` パラメーターを使用して、非表示の項目を含むすべての項目を取得します。
+
+```powershell
+Get-ChildItem -Force
+```
+
+`-Filter` パラメーターを使用して、指定されたフィルターに一致する項目のみを取得します。次の例では、拡張子が `.txt` のファイルのみを取得します。
 
 ```powershell
 Get-ChildItem -Filter *.txt
 ```
+
+### New-Item
+
+
 
 
 
