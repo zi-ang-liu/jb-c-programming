@@ -10,6 +10,22 @@ PowerShell のバージョンを確認するには、次のコマンドを実行
 $PSVersionTable
 ```
 
+PowerShell のバージョンが5.1以下の場合、最新のバージョンにアップグレードすることをお勧めします。
+
+### Cmdlet について
+- PowerShell は、cmdlet（コマンドレット）と呼ばれるコマンドを使用します。
+- コマンドレットは、`Verb-Noun` の形式で構成されます。例えば、`Get-Process` は、プロセスの情報を取得するコマンドレットです。
+- コマンドレットのパラメーターは、`-ParameterName` の形式で指定します。例えば、`Get-Process -Name "chrome"` は、名前が `chrome` のプロセスの情報を取得するコマンドです。
+- コマンドレットのAlias（エイリアス）は、短縮形で使用できます。例えば、`Get-Process` は、`gps` としても使用できます。
+- PowerShell は、基本的に大文字と小文字を区別しません。
+
+### 便利な操作
+
+- `Tab` キーを押すと、コマンドの補完ができます。
+- `Up Arrow` キーを押すと、前のコマンドを表示できます。
+- `Down Arrow` キーを押すと、次のコマンドを表示できます。
+- `Ctrl + C` キーを押すと、コマンドの実行を中止できます。
+
 ## ヘルプ
 
 | Name       | Alias | Description | Example    |
@@ -125,6 +141,46 @@ Rename-Item : Cannot rename because item at 'C:\test\test.txt' does not exist.
 ```
 
 ### Copy-Item
+
+`Copy-Item` コマンドレットは、ファイルまたはディレクトリを別の場所にコピーします。
+
+以下の例は、`test.txt` ファイルを `C:\` ディレクトリにコピーします。
+
+```powershell
+Copy-Item -Path "C:\test\test.txt" -Destination "C:\test2"
+```
+
+### Move-Item
+
+`Move-Item` コマンドレットは、ファイルまたはディレクトリを別の場所に移動します。
+
+以下の例は、`test.txt` ファイルを `C:\test2` ディレクトリに移動します。
+
+```powershell
+Move-Item -Path "C:\test\test.txt" -Destination "C:\test2"
+```
+
+### Get-Content
+
+`Get-Content` コマンドレットは、ファイルの内容を取得します。
+
+以下の例は、`test.txt` ファイルの内容を取得します。
+
+```powershell
+Get-Content test.txt -Path C:\test\test.txt
+```
+
+### Remove-Item
+
+`Remove-Item` コマンドレットは、ファイルまたはディレクトリを削除します。
+
+以下の例は、`test.txt` ファイルを削除します。
+
+```powershell
+Remove-Item -Path C:\test\test.txt
+```
+
+
 
 ## ネットワーク
 
