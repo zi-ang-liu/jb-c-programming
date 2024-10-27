@@ -167,7 +167,7 @@ Move-Item -Path "C:\test\test.txt" -Destination "C:\test2"
 以下の例は、`test.txt` ファイルの内容を取得します。
 
 ```powershell
-Get-Content test.txt -Path C:\test\test.txt
+Get-Content -Path C:\test\test.txt
 ```
 
 ### Remove-Item
